@@ -863,7 +863,8 @@ nav {
 }
 .forms-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 520px);
+  justify-content: center;
   gap: 32px;
   align-items: start;
 }
@@ -1424,16 +1425,6 @@ footer {
       <span><strong>ATENÇÃO</strong> — Este cronograma está sujeito a mudanças de horários. Caso tenhamos ajustes, nosso time de CS fará contato com você.</span>
     </div>
 
-    <!-- Experiência Outsider -->
-    <div class="prog-experience">
-      <div class="prog-experience-icon">🌴</div>
-      <div>
-        <div class="prog-experience-title">Experiência Outsider</div>
-        <p class="prog-experience-text">Teremos um momento especial de <strong>experiência e conexão entre os Outsiders</strong> — uma atividade na praia, aproveitando o cenário de Fortaleza para promover networking, trocas valiosas e conexões entre mentorados.</p>
-        <p class="prog-experience-text" style="margin-top:8px">🌊 Para viver essa experiência com a gente, traga <strong>traje de banho</strong> e se prepare para esse momento especial.</p>
-      </div>
-    </div>
-
     <div class="prog-grid">
       <!-- DIA 1 -->
       <div class="prog-card">
@@ -1614,13 +1605,6 @@ footer {
         <a href="https://formy.cloud/f/46de7f6c" target="_blank" class="form-card-btn">CONFIRMAR PRESENÇA</a>
       </div>
 
-      <!-- Card 2: Check-in da Viagem -->
-      <div class="form-card">
-        <div class="form-card-eyebrow">02</div>
-        <div class="form-card-title">Check-in da Viagem</div>
-        <p class="form-card-sub">Já comprou a passagem? Faça o check-in da viagem para nos avisar quando você chega.</p>
-        <a href="https://formy.cloud/f/f6fbecd3" target="_blank" class="form-card-btn form-card-btn--outline">FAZER CHECK-IN</a>
-      </div>
 
     </div>
   </div>
@@ -1676,7 +1660,12 @@ footer {
             <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
           </svg>
         </button>
-        <div class="faq-a">Para os dias de plenária, leve um <strong>casaco ou blazer</strong> — mesmo em Fortaleza, o salão fica no ar-condicionado e costuma ficar frio. Também teremos uma atividade externa (detalhes em breve), então traga <strong>roupa de banho, roupas de esporte e lazer</strong>.</div>
+        <div class="faq-a">
+          Para os dias de plenária, leve um <strong>casaco ou blazer</strong> — mesmo em Fortaleza, o salão fica no ar-condicionado e costuma ficar frio.<br><br>
+          🌴 <strong>Experiência Outsider — Atividade na Praia</strong><br>
+          Teremos um momento especial de experiência e conexão entre os Outsiders, com uma atividade na praia, aproveitando o cenário de Fortaleza para promover networking, trocas valiosas e conexões entre mentorados.<br><br>
+          🌊 Para viver essa experiência com a gente, traga <strong>traje de banho, roupas de esporte e lazer</strong> e se prepare para esse momento especial.
+        </div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
