@@ -1034,6 +1034,19 @@ nav {
   padding-top: 14px;
 }
 .faq-item.open .faq-a { display: block; }
+.faq-list {
+  margin: 10px 0 4px 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.faq-list li { font-size: 14px; color: #5A5E66; line-height: 1.5; }
+.faq-link {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 /* ─────────────────────────────────────────────────────────────
    FINAL CTA
@@ -1617,101 +1630,117 @@ footer {
   <div class="faq-inner">
     <div class="faq-header">PERGUNTAS FREQUENTES</div>
     <div class="faq-grid">
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Quais são os dias do evento?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
-        <div class="faq-a">O Outsider Day acontece nos dias <strong>10 e 11 de Setembro de 2026</strong>, em Fortaleza (CE). O <strong>Dia 1 (10/09 — quinta-feira)</strong> é a plenária no Praiano Hotel. O <strong>Dia 2 (11/09 — sexta-feira)</strong> é a Experiência Outsider com atividade externa na praia.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">O que é o Outsider Day?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">O Outsider Day é um encontro presencial exclusivo para mentorados, criado para aprofundar conexões, discussões estratégicas e momentos de troca entre empresários que fazem parte do ecossistema.<br><br>É um evento mais intimista, focado em proximidade, networking e desenvolvimento prático.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          O evento é aberto para não-mentorados?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
-        <div class="faq-a">Não. O Outsider Day é um evento exclusivo para mentorados ativos da Outsider School. Não é permitida a venda ou transferência de vagas para pessoas externas ao programa.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">Quando e onde acontece o evento?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">📅 <strong>10 e 11 de Setembro de 2026</strong><br>🏨 <strong>Hotel Praiano</strong><br>📍 <strong>Fortaleza — CE</strong><br><br>O <strong>Dia 1 (10/09 — quinta-feira)</strong> é a plenária no Praiano Hotel. O <strong>Dia 2 (11/09 — sexta-feira)</strong> é a Experiência Outsider com atividade externa na praia.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          As vagas são limitadas?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
+        <button class="faq-q" onclick="toggleFaq(this)">Quem pode participar?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">O evento é <strong>exclusivo para mentorados ativos da Outsider School</strong>. A participação é destinada a quem faz parte do ecossistema de mentorados. Não é permitida a venda ou transferência de vagas.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">O evento é pago?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">Não. O <strong>Outsider Day é um evento gratuito para mentorados</strong>.<br><br>Cada participante é responsável apenas pelos seus custos de:
+          <ul class="faq-list"><li>Passagem</li><li>Hospedagem</li><li>Alimentação fora do evento</li><li>Transporte</li></ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">As vagas são limitadas?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
         <div class="faq-a">Sim. O Outsider Day é um evento menor e intimista, com capacidade de espaço limitada. Confirme sua presença o quanto antes para garantir seu lugar — não haverá lista de espera.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          O evento terá transmissão ao vivo?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
-        <div class="faq-a">Não. O Outsider Day não será transmitido ao vivo nem gravado para distribuição posterior. O conteúdo, as dinâmicas e as conexões são vivências exclusivas de quem estiver presente.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">Como faço para confirmar minha presença?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">Basta clicar no botão <strong>"Confirmar Presença"</strong> nesta página e responder o formulário. Leva menos de 1 minuto.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Qual é o tema do evento?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
+        <button class="faq-q" onclick="toggleFaq(this)">Preciso comprar passagem agora?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">Sim, recomendamos que você <strong>compre sua passagem o quanto antes</strong>. Fortaleza está sempre em alta temporada em setembro — antecipar garante melhores preços e nos ajuda a estimar o número de participantes.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Posso levar meu sócio?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">Em alguns casos é permitido levar <strong>sócios que fazem parte direta da operação do negócio</strong>, mas isso depende da organização do evento. Caso deseje levar um sócio, entre em contato com a equipe de CS para validar.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Posso levar membros do meu time?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">Não. O Outsider Day foi pensado para ser um encontro <strong>exclusivo entre mentorados</strong>, mantendo um ambiente mais estratégico e íntimo.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Como será a dinâmica do evento?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">O Outsider Day terá uma dinâmica focada em:
+          <ul class="faq-list"><li>Discussões estratégicas</li><li>Troca de experiências entre mentorados</li><li>Momentos de networking</li><li>Atividades presenciais</li></ul>
+          A programação completa está na página e sujeita a alterações.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">O evento terá transmissão ao vivo ou venda de ingressos?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">Não em nenhum dos dois casos. O Outsider Day <strong>não será transmitido ao vivo, não será gravado</strong> para distribuição e <strong>não é um evento de vendas</strong>. É um encontro exclusivo para a comunidade de mentorados.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Qual é o tema do evento?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
         <div class="faq-a">O tema desta edição é <strong>Funis de Venda com IA na Prática</strong>. Vamos do estratégico ao operacional: como usar inteligência artificial para montar, escalar e otimizar funis de venda de forma real e aplicável ao seu negócio.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          O que devo levar para o evento?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
+        <button class="faq-q" onclick="toggleFaq(this)">O que devo levar para o evento?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
         <div class="faq-a">
           Para os dias de plenária, leve um <strong>casaco ou blazer</strong> — mesmo em Fortaleza, o salão fica no ar-condicionado e costuma ficar frio.<br><br>
           🌴 <strong>Experiência Outsider — Atividade na Praia</strong><br>
-          Teremos um momento especial de experiência e conexão entre os Outsiders, com uma atividade na praia, aproveitando o cenário de Fortaleza para promover networking, trocas valiosas e conexões entre mentorados.<br><br>
-          🌊 Para viver essa experiência com a gente, traga <strong>traje de banho, roupas de esporte e lazer</strong> e se prepare para esse momento especial.
+          Teremos um momento especial de experiência e conexão entre os Outsiders, com uma atividade na praia. Traga <strong>traje de banho, roupas de esporte e lazer</strong>.<br><br>
+          💻 Venha também com <strong>celular, tablet e computador carregados</strong> — não há tomadas nas mesas.
         </div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Como funciona o almoço?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
-        <div class="faq-a">O local do almoço será definido no dia. O Praiano Hotel disponibiliza dois restaurantes — a escolha fica por conta de cada participante e o custo é individual.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">🍽️ Como funciona o almoço?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">
+          O local do almoço será definido no dia — o custo é individual de cada participante.<br><br>
+          Além do restaurante dentro do Hotel Praiano, existem diversas opções próximas acessíveis a pé na região da Beira-Mar:
+          <ul class="faq-list">
+            <li><strong>Fornearia Capri</strong></li>
+            <li><a href="https://www.cocobambu.com/home" target="_blank" class="faq-link">Coco Bambu</a></li>
+            <li><a href="https://mestresussa.com.br/" target="_blank" class="faq-link">Mestre Sussa</a></li>
+            <li><a href="https://illamare.com.br" target="_blank" class="faq-link">Illamare</a></li>
+          </ul>
+          Todos ficam a poucos minutos do Praiano e são ótimas opções para almoço ou jantar durante os dias do evento.
+        </div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Posso indicar alguém para o evento?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
-        <div class="faq-a">Sim, mas com critério. Caso tenha amigos ou parceiros que queiram participar, avise ao time de CS — será feita uma avaliação de perfil junto ao time comercial antes de qualquer confirmação. Se a pessoa indicada for aprovada e participar, <strong>não esqueça de cadastrar a indicação no Outsider Club e retirar a sua premiação</strong>.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">Onde posso me hospedar?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">Nesta página você encontra sugestões de hotéis próximos ao evento. Recomendamos reservar com antecedência — Fortaleza está sempre em alta temporada em setembro e os melhores quartos se esgotam rápido.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Tem tomadas nas mesas?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
+        <button class="faq-q" onclick="toggleFaq(this)">Posso indicar alguém para o evento?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
+        <div class="faq-a">Sim, mas com critério. Caso tenha amigos ou parceiros interessados, avise ao time de CS — será feita uma avaliação de perfil junto ao time comercial antes de qualquer confirmação. Se a pessoa indicada for aprovada e participar, <strong>não esqueça de cadastrar a indicação no Outsider Club e retirar a sua premiação</strong>.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Tem tomadas nas mesas?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
         <div class="faq-a">Não há tomadas nas mesas — apenas extensões nas laterais das paredes. Venha com <strong>celular, tablet e computador carregados</strong> para aproveitar o dia sem interrupções.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Posso transferir minha vaga?
-          <svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </button>
+        <button class="faq-q" onclick="toggleFaq(this)">Posso transferir minha vaga?<svg class="faq-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none"><polyline points="4,6 8,10 12,6" stroke="#D4AF37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></button>
         <div class="faq-a">Não. A participação é pessoal e intransferível, vinculada ao mentorado cadastrado no programa.</div>
       </div>
+
     </div>
   </div>
 </section>
